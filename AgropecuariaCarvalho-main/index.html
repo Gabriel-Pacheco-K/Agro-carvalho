@@ -1,41 +1,234 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Agropecuária Carvalho</title>
-    <meta charset="utf-8">
-    <meta name="trabalho" content="site contrato">
-    <meta name="membros" content="Emerson Machado de Aguiar Junior, Daniel dos Santos de Souza, Gabriel Pacheco">
-    <link rel="icon" href="img/icon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agropecuária Carvalho | Pet, jardinagem e utilidades no Rio Maina, Criciúma</title>
+  <meta name="description" content="Agropecuária Carvalho e Variedades: há mais de 13 anos no Rio Maina, em Criciúma/SC. Produtos para pets, jardinagem, ferramentas e utilidades, com tele-entrega. Peça pelo WhatsApp.">
+  <meta name="author" content="Emerson Machado de Aguiar Junior, Daniel dos Santos de Souza, Gabriel Pacheco">
+  <meta name="theme-color" content="#1f6b34">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agropecuária Carvalho e Variedades">
+  <meta property="og:description" content="Pet, jardinagem, ferramentas e utilidades no Rio Maina, Criciúma. Peça pelo WhatsApp com tele-entrega.">
+  <meta property="og:image" content="img/otimizadas/fachada.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="img/otimizadas/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/otimizadas/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados estruturados: ajudam o Google a mostrar a loja nas buscas locais e no Maps -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Agropecuária Carvalho e Variedades",
+    "image": "img/otimizadas/fachada.jpg",
+    "telephone": "+55 48 99946-5897",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Virgílio Mondardo, S/N - Wosocris, Rio Maina",
+      "addressLocality": "Criciúma",
+      "addressRegion": "SC",
+      "postalCode": "88818-160",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -28.6630687, "longitude": -49.4340171 },
+    "sameAs": [
+      "https://www.instagram.com/agropecuaria_carvalhoo/",
+      "https://www.facebook.com/p/Agropecuária-Carvalho-100063693453028/"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <b>Agropecuária Carvalho</b>
-    </header>
-    <main>
-        <article class="topcarousel">
-            <button id="back">&#10218;</button>
-            <b>
-                <img id="carousel" src="img/img1.jpg" alt="carousel">
-            </b>
-            <button id="next">&#10219;</button>
-        </article>
-        <article class="downtext">
-            <p>AGROPECUÁRIA CARVALHO E VARIEDADES a mais de 13 anos no mercado agora com novidades...
-            tudo que você precisa, com sistema de tele entrega.
-            chamem no WhatsApp para informações sobre disponibilidade de produtos...</p>
-            <p>
-                <a href="https://api.whatsapp.com/send?phone=5548999465897&fbclid=PAZXh0bgNhZW0CMTEAAabsZ4eEH8HjkRQnheRf4FaiSijkhQHB_E3BA2qQkcSlrAYDLew9tmW0X4U_aem_AnrADXbFd1eJBkHeT8q9Sw">WhatsApp   </a>
-                <a href="https://www.instagram.com/agropecuaria_carvalhoo/">Instagram   </a>
-                <a href="https://www.facebook.com/p/Agropecuária-Carvalho-100063693453028/">Facebook</a>
-            </p>
-            <a href="https://www.google.com/maps/place/Agropecuária+Carvalho/@-28.6630593,-49.4340935,19z/data=!4m6!3m5!1s0x95219dbc6f759b49:0xcac15b92238cf535!8m2!3d-28.6630687!4d-49.4340171!16s%2Fg%2F11hn5xqccb?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
-                📍 Rua Virgílio Mondardo, S/N - Wosocris, Rio Maina, Criciúma 88818-160
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35z"/><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.83L.06 23.88a.5.5 0 0 0 .61.61l6.06-1.47A11.95 11.95 0 0 0 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 21.94a9.93 9.93 0 0 1-5.06-1.38l-.36-.21-3.74.9.92-3.77-.23-.37A9.93 9.93 0 0 1 2.06 12C2.06 6.51 6.51 2.06 12 2.06S21.94 6.51 21.94 12 17.49 21.94 12 21.94z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h11v9h1.5V8H19l3 4v4h-2a2.5 2.5 0 0 1-5 0H9.5a2.5 2.5 0 0 1-5 0H3V5zm4 12.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10.5 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM16 10v2h4.2l-1.5-2H16z"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="#inicio" class="brand">
+        <img src="img/otimizadas/logo.jpg" alt="" width="40" height="40">
+        <span>Agropecuária <strong>Carvalho</strong></span>
+      </a>
+      <nav aria-label="Seções do site">
+        <a href="#produtos">Produtos</a>
+        <a href="#tele-entrega">Tele-entrega</a>
+        <a href="#onde-estamos">Onde estamos</a>
+      </nav>
+      <a class="btn btn-whats btn-small" href="https://wa.me/5548999465897?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">
+        <svg width="18" height="18" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Rio Maina · Criciúma/SC</p>
+          <h1>Tudo para o seu pet, o seu jardim e a sua casa</h1>
+          <p class="lead">Há mais de 13 anos atendendo a comunidade, agora com <strong>tele-entrega</strong>. Chame no WhatsApp para saber a disponibilidade dos produtos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-whats" href="https://wa.me/5548999465897?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Pedir pelo WhatsApp
             </a>
-            
-        </article>
-    </main>
+            <a class="btn btn-outline" href="#onde-estamos">
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg>
+              Como chegar
+            </a>
+          </div>
+          <ul class="facts">
+            <li><strong>13+</strong> anos de loja</li>
+            <li><strong>Tele-entrega</strong> na região</li>
+            <li><strong>Atendimento</strong> pelo WhatsApp</li>
+          </ul>
+        </div>
+        <figure class="hero-photo">
+          <picture>
+            <source srcset="img/otimizadas/fachada.webp" type="image/webp">
+            <img src="img/otimizadas/fachada.jpg" alt="Fachada da Agropecuária Carvalho e Variedades, com vasos e produtos expostos na calçada" width="753" height="753" fetchpriority="high">
+          </picture>
+          <figcaption>
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-truck"/></svg>
+            Entregamos na sua casa
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="produtos" class="section">
+      <div class="wrap">
+        <p class="eyebrow">O que você encontra</p>
+        <h2>Produtos para o dia a dia</h2>
+        <ul class="cards">
+          <li class="card">
+            <picture>
+              <source srcset="img/otimizadas/pet-petiscos.webp" type="image/webp">
+              <img src="img/otimizadas/pet-petiscos.jpg" alt="Pacotes de petiscos para cachorro" width="900" height="900" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>Pet</h3>
+              <p>Rações, petiscos e antipulgas para cães e gatos.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="img/otimizadas/jardinagem.webp" type="image/webp">
+              <img src="img/otimizadas/jardinagem.jpg" alt="Saco de terra adubada para vasos e floreiras" width="900" height="900" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>Jardinagem</h3>
+              <p>Mudas, sementes e terra adubada para vasos, floreiras e canteiros.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="img/otimizadas/ferramentas.webp" type="image/webp">
+              <img src="img/otimizadas/ferramentas.jpg" alt="Ancinhos, vassouras e ferramentas expostas na loja" width="899" height="899" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>Ferramentas e utilidades</h3>
+              <p>Ferragens, ferramentas e utilidades para a casa e o quintal.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="img/otimizadas/pet-medicamentos.webp" type="image/webp">
+              <img src="img/otimizadas/pet-medicamentos.jpg" alt="Caixa de antipulgas de uso veterinário para gatos" width="900" height="900" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>Uso veterinário</h3>
+              <p>Produtos de uso veterinário para o cuidado dos seus animais.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="note">Não achou o que procura? <a href="https://wa.me/5548999465897?text=Ol%C3%A1!%20Voc%C3%AAs%20t%C3%AAm%20" target="_blank" rel="noopener">Pergunte no WhatsApp</a>: temos muitas outras variedades na loja.</p>
+      </div>
+    </section>
+
+    <section id="tele-entrega" class="section section-green">
+      <div class="wrap">
+        <p class="eyebrow">Tele-entrega</p>
+        <h2>Peça sem sair de casa</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Diga o que você precisa. A gente confirma se tem na loja.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Combine a entrega</h3>
+            <p>Informe o endereço e acerte os detalhes do pedido.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Receba em casa</h3>
+            <p>Seu pedido chega até você, sem precisar sair.</p>
+          </li>
+        </ol>
+        <a class="btn btn-light" href="https://wa.me/5548999465897?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20com%20tele-entrega." target="_blank" rel="noopener">
+          <svg width="20" height="20" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Fazer meu pedido
+        </a>
+      </div>
+    </section>
+
+    <section id="onde-estamos" class="section">
+      <div class="wrap location">
+        <div class="location-text">
+          <p class="eyebrow">Onde estamos</p>
+          <h2>Venha conhecer a loja</h2>
+          <address>
+            <svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>Rua Virgílio Mondardo, S/N — Wosocris<br>Rio Maina, Criciúma/SC · 88818-160</span>
+          </address>
+          <p class="contact-line">WhatsApp: <a href="https://wa.me/5548999465897" target="_blank" rel="noopener">(48) 99946-5897</a></p>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=-28.6630687%2C-49.4340171" target="_blank" rel="noopener">
+            Abrir no Google Maps
+          </a>
+        </div>
+        <div class="map">
+          <iframe title="Mapa com a localização da Agropecuária Carvalho"
+                  src="https://maps.google.com/maps?q=-28.6630687,-49.4340171&amp;z=17&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Agropecuária Carvalho e Variedades</strong>
+        <p>© <span id="ano">2026</span> · Rio Maina, Criciúma/SC</p>
+      </div>
+      <ul class="social" aria-label="Redes sociais">
+        <li><a href="https://wa.me/5548999465897" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="22" height="22"><use href="#i-whatsapp"/></svg></a></li>
+        <li><a href="https://www.instagram.com/agropecuaria_carvalhoo/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22"><use href="#i-instagram"/></svg></a></li>
+        <li><a href="https://www.facebook.com/p/Agropecuária-Carvalho-100063693453028/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="22" height="22"><use href="#i-facebook"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="wrap credits">Site desenvolvido por Emerson Machado de Aguiar Junior, Daniel dos Santos de Souza e Gabriel Pacheco.</p>
+  </footer>
+
+  <a class="whats-float" href="https://wa.me/5548999465897?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg width="28" height="28" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="js/script.js" defer></script>
 </body>
+</html>
