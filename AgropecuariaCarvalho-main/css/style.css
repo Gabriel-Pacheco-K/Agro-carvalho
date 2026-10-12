@@ -221,3 +221,8 @@ address svg { flex-shrink: 0; color: var(--green-700); margin-top: 0.2rem; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Selo de avaliação do Google no destaque */
+.facts .rating { text-decoration: none; color: inherit; }
+.facts .rating span { color: #f5a623; }
+.facts .rating:hover strong { color: var(--green-700); }
